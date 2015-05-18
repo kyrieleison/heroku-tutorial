@@ -4,3 +4,7 @@ build:
         - script:
             name: A step that executes `npm install` command
             code: npm install
+deploy:
+    steps:
+        - heroku-deploy:
+            install-toolbelt: yes
